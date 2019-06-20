@@ -1,20 +1,15 @@
-print("help")
 mass = int(input("enter mass"))
-weight = float(input("enter weight"))
 height = int(input("height"))
-bmi = float(mass / (weight * height))
-print("bmi = ")
-print(bmi)
 
-text_1 = """hello
-my 
-friend"""
-print(text_1)
-text_2 = "we are \ntesting \na lining method"
-print(text_2)
+bmi = float(mass / ( height ** 2))
 
-a = 10
-b = 10
-c = a*b
-print(c)
+
+if bmi <= 18 :
+    print('under weight')
+elif 18 < bmi <=25 :
+    print('normal')
+elif 25 < bmi <= 30 :
+    print('over weight')
+else :
+    print("obesety")
 
