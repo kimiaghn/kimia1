@@ -1,14 +1,17 @@
 mass = int(input("enter mass"))
 height = int(input("height"))
+if height > 10:
+     height = height / 100
+
 
 bmi = float(mass / ( height ** 2))
 
 
-if bmi <= 18 :
+if bmi < 18 :
     print('under weight')
-elif 18 < bmi <=25 :
+elif bmi <= 25 :
     print('normal')
-elif 25 < bmi <= 30 :
+elif bmi <= 30 :
     print('over weight')
 else :
     print("obesety")
