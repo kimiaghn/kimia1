@@ -18,4 +18,3 @@ if t_2 - t_1 > 5 :
     print('really ???!!')
 else :
     print('bravo !')
-   
