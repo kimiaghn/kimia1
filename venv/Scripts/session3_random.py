@@ -1,5 +1,5 @@
 import random
-computer_random = random.random()
+computer_random = random.random(1,10)
 while true :
     guessed_number = int(input('enter any number'))
     if guessed_number == computer_random :
