@@ -13,4 +13,6 @@ while True :
         break
 
 t_2 = time.time()
-print('time expended = ', t_2 - t_1)
+if t_2 - t_1 > 5 :
+    print('really ???!!')
+# print('time expended = ', t_2 - t_1)
