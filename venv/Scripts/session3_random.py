@@ -16,6 +16,6 @@ t_2 = time.time()
 if t_2 - t_1 > 5 :
     print ( 'time expended = ', t_2 - t_1 )
     print('really ???!!')
-elif :
+else :
     print('bravo !')
    
