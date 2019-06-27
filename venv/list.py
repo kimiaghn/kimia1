@@ -6,5 +6,5 @@
 
 dictionary = {'singer':'Hoizer', 'song':'take me to church'}
 dictionary['year'] = 1986
-dictionary.__len__(dictionary)
+
 print(dictionary)
