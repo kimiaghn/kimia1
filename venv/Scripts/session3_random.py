@@ -1,9 +1,12 @@
+import time
 import random
 computer_rand = random.randint(1,10)
-while true :
-    guessed_number = int(input('enter any number'))
+t_1 = time.time()
+while True :
+    guessed_number = int(input('enter any number = '))
     if guessed_number == computer_rand :
-        print('you guessed right')
+        print('you guessed right !')
         break
 
-print('end')
+t_2 = time.time()
+print('time expended = ', t_2 - t_1)
