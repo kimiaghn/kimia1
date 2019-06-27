@@ -5,4 +5,6 @@
 # print(delete)
 
 dictionary = {'singer':'Hoizer', 'song':'take me to church'}
-dictionary['singer']
+dictionary['year'] = 1986
+dictionary.__len__(dictionary)
+print(dictionary)
