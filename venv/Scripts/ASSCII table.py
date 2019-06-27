@@ -1,3 +1,5 @@
 for i in range (90,122) :
-    asc = list[ord(i), chr(i)]
-    print('ASSCII', asc)
+    num = ord(i)
+    alpha = chr(i)
+    lst = [num,alpha]
+    print('ASSCII', lst)
