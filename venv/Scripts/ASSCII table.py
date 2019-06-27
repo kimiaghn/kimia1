@@ -1,5 +1,5 @@
-for i in range (90,122) :
-    num = ord[i]
-    alpha = chr[i]
+for i in range (0,255) :
+    num = int(ord[i])
+    alpha = str(chr[i])
     lst = [num, alpha]
     print('ASSCII', lst)
