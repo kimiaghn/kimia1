@@ -57,9 +57,31 @@ data = [
 j = 0
 len_of_data = len(data)
 duration = [ ]
+
 for i in data:
     if j < len_of_data - 1 :
         # print(i,'|', j, '|',  data[j], '|',  data[j+1])
         duration.append(data[j+1] - data[j])
         j = j + 1
+print('phase 1 :')
 print(duration)
+print('-----------------------------------------------------------------------------------')
+print('\nphase 2 :')
+t1_less = float(input('enter T1'))
+t2_more = float(input('enter T2'))
+describe = [ ]
+counter = 0
+len_of_duration = len(duration)
+for z in duration :
+    for counter in range(0,len_of_duration) :
+        if duration[counter] <= t1_less :
+            describe.append('S')
+        elif duration[counter] >= t2_more :
+            describe.append ('L')
+        else :
+            describe.append ('M')
+print(*describe)
+
+print('-----------------------------------------------------------------------------------')
+print('\nphase3 :')
+
