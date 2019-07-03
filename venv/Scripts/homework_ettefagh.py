@@ -1,3 +1,4 @@
+import string
 data = [
     50.2999992370605, 142.800003051757, 242.600006103515, 338.399993896484, 435.799987792968,
     533.299987792968, 626.5, 730.900024, 838.799987, 959.400024414062, 1070.1999, 1195.0,
@@ -84,4 +85,19 @@ print(*describe)
 
 print('-----------------------------------------------------------------------------------')
 print('\nphase3 :')
+counter1 = 0
+count_s = 0
+fake = ['L']
+for c in describe :
+   if c == 'L':
+        l_start = describe.index(c)
+        describe_mapped = describe[l_start: len_of_duration]
+        for b in describe_mapped:
+            fake.append(b)
+
+
+        if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or \
+                fake == ['L', 'S', 'S', 'S', 'L'] or fake == ['L','S','S','S','S','L'] :
+            print(*fake, 'yaay')
+
 
