@@ -87,17 +87,24 @@ print('-------------------------------------------------------------------------
 print('\nphase3 :')
 counter1 = 0
 count_s = 0
-fake = ['L']
+fake = [ ]
 for c in describe :
-   if c == 'L':
-        l_start = describe.index(c)
-        describe_mapped = describe[l_start: len_of_duration]
-        for b in describe_mapped:
-            fake.append(b)
-
-
-        if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or \
+    fake.append(c)
+    if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or fake == ['L L'] or \
                 fake == ['L', 'S', 'S', 'S', 'L'] or fake == ['L','S','S','S','S','L'] :
-            print(*fake, 'yaay')
+        counter1 = counter1 + 1
+        fake = [ ]
+
+print(counter1)
+   # if c == 'L':
+   #      l_start = describe.index(c)
+   #      describe_mapped = describe[l_start: len_of_duration]
+   #      for b in describe_mapped:
+   #          fake.append(b)
+   #
+   #
+   #      if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or \
+   #              fake == ['L', 'S', 'S', 'S', 'L'] or fake == ['L','S','S','S','S','L'] :
+   #          print(*fake, 'yaay')
 
 
