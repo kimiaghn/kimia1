@@ -1225,7 +1225,7 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 for a in weird_text:
    l = weird_text.count(a)
    if l < 20:
-      print(a, ":", l)
+      print(a)
 
 # mapping = str.(weird_text)
 # mapped_text = [ ]
