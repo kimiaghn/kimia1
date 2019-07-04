@@ -81,7 +81,7 @@ for z in duration :
             describe.append ('L')
         else :
             describe.append ('M')
-print(*describe)
+print(describe)
 
 print('-----------------------------------------------------------------------------------')
 print('\nphase3 :')
@@ -90,13 +90,17 @@ count_s = 0
 fake = [ ]
 for c in describe :
     fake.append(c)
-    if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or fake == ['L L'] or \
-                fake == ['L', 'S', 'S', 'S', 'L'] or fake == ['L','S','S','S','S','L'] :
-        counter1 = counter1 + 1
-        fake = [ ]
 
-print(counter1)
-   # if c == 'L':
+    fake.__contains__('LMSM')
+    print('****************')
+
+#     if fake == ['L', 'S', 'L'] or fake == ['L', 'S', 'S', 'L'] or fake == ['L L'] or \
+#                 fake == ['L', 'S', 'S', 'S', 'L'] or fake == ['L','S','S','S','S','L'] :
+#         counter1 = counter1 + 1
+#         fake = [ ]
+#
+# print(counter1)
+#    # if c == 'L':
    #      l_start = describe.index(c)
    #      describe_mapped = describe[l_start: len_of_duration]
    #      for b in describe_mapped:
